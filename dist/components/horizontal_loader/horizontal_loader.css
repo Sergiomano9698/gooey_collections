@@ -1,0 +1,60 @@
+
+#menu {
+	position: relative;
+  display: inline-block;
+	margin-left: 100px auto;
+	-webkit-filter: url("#goo");
+	filter: url("#goo");
+}
+.menu__item {
+	position: absolute;
+	display: inline-block;
+	padding: 20px;
+	height: 40px;
+	width: 40px;
+	border-radius: 80px;
+	background: #41acb7;
+	left: 0;
+	top: 0;
+	transition: 0.33s ease-out;
+}
+
+#menu .menu__item:nth-child(1){
+	transform : translate3d(0, 0, 0);
+}
+#menu .menu__item:nth-child(2){
+	transform : translate3d(180px, 0, 0);
+	transition-delay: 0.1s;
+}
+#menu .menu__item:nth-child(3){
+	transform : translate3d(360px, 0, 0);
+	transition-delay: 0.2s;
+}
+#menu .menu__item:nth-child(4){
+	transform : translate3d(360px, 0px, 0);
+	height: 10px;
+	width: 10px;
+	top: 15px;
+	background: #40d0a1;
+	box-shadow: 0 0 20px #40d0a1, 0 0 10px #40d0a1;
+	animation: goo 5s infinite ease-in-out;
+	transform : translate3d(-30px, 0, 0);
+}
+
+.menu__item a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+@keyframes goo {
+	0% {
+		transform : translate3d(-30px, 0, 0);
+	}
+	50% {
+		transform : translate3d(420px, 0, 0);
+	}
+	100% {
+		transform : translate3d(-30px, 0, 0);
+	}
+}

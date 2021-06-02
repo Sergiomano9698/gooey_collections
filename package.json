@@ -3,7 +3,7 @@
   "description": "Gooery collection will give button, loader, slider, radio button UI.",
   "author": "Sergiomano",
   "keywords": ["react", "components", "ui", "gooey", "gooey collections"],
-  "version": "0.0.1",
+  "version": "0.0.9",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
